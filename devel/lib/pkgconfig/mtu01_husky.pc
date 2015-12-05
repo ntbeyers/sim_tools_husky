@@ -1,0 +1,8 @@
+prefix=/home/husky/sim_tools_husky/devel
+
+Name: mtu01_husky
+Description: Description of mtu01_husky
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/husky/sim_tools_husky/devel/lib 
+Requires: 

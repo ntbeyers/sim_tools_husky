@@ -1,0 +1,8 @@
+prefix=/home/husky/sim_tools_husky/install
+
+Name: my_husky_sim
+Description: Description of my_husky_sim
+Version: 0.0.3
+Cflags: 
+Libs: -L/home/husky/sim_tools_husky/install/lib 
+Requires: 

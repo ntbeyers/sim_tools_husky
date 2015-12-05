@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "my_husky_sim")
+set(my_husky_sim_MAINTAINER "Yan Ma <y22ma@clearpathrobotics.com>")
+set(my_husky_sim_DEPRECATED "")
+set(my_husky_sim_VERSION "0.0.3")
+set(my_husky_sim_BUILD_DEPENDS )
+set(my_husky_sim_RUN_DEPENDS "gazebo_ros" "husky_description" "robot_pose_ekf")
+set(my_husky_sim_BUILDTOOL_DEPENDS "catkin")

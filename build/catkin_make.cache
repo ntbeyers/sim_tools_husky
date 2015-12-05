@@ -1,0 +1,2 @@
+mtu01_husky:my_husky_sim
+-DCATKIN_DEVEL_PREFIX=/home/husky/sim_tools_husky/devel -DCMAKE_INSTALL_PREFIX=/home/husky/sim_tools_husky/install
