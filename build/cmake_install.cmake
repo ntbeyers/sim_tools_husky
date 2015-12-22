@@ -1,8 +1,8 @@
-# Install script for directory: /home/husky/sim_tools_husky/src
+# Install script for directory: /home/naslab/sim_tools_husky/src
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/husky/sim_tools_husky/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/naslab/sim_tools_husky/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,54 +43,82 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/husky/sim_tools_husky/install/_setup_util.py")
-FILE(INSTALL DESTINATION "/home/husky/sim_tools_husky/install" TYPE PROGRAM FILES "/home/husky/sim_tools_husky/build/catkin_generated/installspace/_setup_util.py")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/naslab/sim_tools_husky/install/_setup_util.py")
+  IF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+  IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+FILE(INSTALL DESTINATION "/home/naslab/sim_tools_husky/install" TYPE PROGRAM FILES "/home/naslab/sim_tools_husky/build/catkin_generated/installspace/_setup_util.py")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/husky/sim_tools_husky/install/env.sh")
-FILE(INSTALL DESTINATION "/home/husky/sim_tools_husky/install" TYPE PROGRAM FILES "/home/husky/sim_tools_husky/build/catkin_generated/installspace/env.sh")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/naslab/sim_tools_husky/install/env.sh")
+  IF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+  IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+FILE(INSTALL DESTINATION "/home/naslab/sim_tools_husky/install" TYPE PROGRAM FILES "/home/naslab/sim_tools_husky/build/catkin_generated/installspace/env.sh")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/husky/sim_tools_husky/install/setup.bash")
-FILE(INSTALL DESTINATION "/home/husky/sim_tools_husky/install" TYPE FILE FILES "/home/husky/sim_tools_husky/build/catkin_generated/installspace/setup.bash")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/naslab/sim_tools_husky/install/setup.bash")
+  IF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+  IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+FILE(INSTALL DESTINATION "/home/naslab/sim_tools_husky/install" TYPE FILE FILES "/home/naslab/sim_tools_husky/build/catkin_generated/installspace/setup.bash")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/husky/sim_tools_husky/install/setup.sh")
-FILE(INSTALL DESTINATION "/home/husky/sim_tools_husky/install" TYPE FILE FILES "/home/husky/sim_tools_husky/build/catkin_generated/installspace/setup.sh")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/naslab/sim_tools_husky/install/setup.sh")
+  IF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+  IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+FILE(INSTALL DESTINATION "/home/naslab/sim_tools_husky/install" TYPE FILE FILES "/home/naslab/sim_tools_husky/build/catkin_generated/installspace/setup.sh")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/husky/sim_tools_husky/install/setup.zsh")
-FILE(INSTALL DESTINATION "/home/husky/sim_tools_husky/install" TYPE FILE FILES "/home/husky/sim_tools_husky/build/catkin_generated/installspace/setup.zsh")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/naslab/sim_tools_husky/install/setup.zsh")
+  IF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+  IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+FILE(INSTALL DESTINATION "/home/naslab/sim_tools_husky/install" TYPE FILE FILES "/home/naslab/sim_tools_husky/build/catkin_generated/installspace/setup.zsh")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  list(APPEND CPACK_ABSOLUTE_DESTINATION_FILES
-   "/home/husky/sim_tools_husky/install/.rosinstall")
-FILE(INSTALL DESTINATION "/home/husky/sim_tools_husky/install" TYPE FILE FILES "/home/husky/sim_tools_husky/build/catkin_generated/installspace/.rosinstall")
-ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-
-IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/etc/catkin/profile.d" TYPE FILE FILES "/opt/ros/hydro/share/catkin/cmake/env-hooks/05.catkin_make.bash")
-ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-
-IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/etc/catkin/profile.d" TYPE FILE FILES "/opt/ros/hydro/share/catkin/cmake/env-hooks/05.catkin_make_isolated.bash")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/naslab/sim_tools_husky/install/.rosinstall")
+  IF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+  IF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  ENDIF (CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+FILE(INSTALL DESTINATION "/home/naslab/sim_tools_husky/install" TYPE FILE FILES "/home/naslab/sim_tools_husky/build/catkin_generated/installspace/.rosinstall")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  INCLUDE("/home/husky/sim_tools_husky/build/gtest/cmake_install.cmake")
-  INCLUDE("/home/husky/sim_tools_husky/build/mtu01_husky/cmake_install.cmake")
-  INCLUDE("/home/husky/sim_tools_husky/build/my_husky_sim/cmake_install.cmake")
+  INCLUDE("/home/naslab/sim_tools_husky/build/gtest/cmake_install.cmake")
+  INCLUDE("/home/naslab/sim_tools_husky/build/mtu01_husky/cmake_install.cmake")
+  INCLUDE("/home/naslab/sim_tools_husky/build/my_husky_sim/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
@@ -100,7 +128,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/home/husky/sim_tools_husky/build/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/naslab/sim_tools_husky/build/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/home/husky/sim_tools_husky/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/naslab/sim_tools_husky/build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

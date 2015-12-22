@@ -31,11 +31,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/husky/sim_tools_husky/src
+CMAKE_SOURCE_DIR = /home/naslab/sim_tools_husky/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/husky/sim_tools_husky/build
+CMAKE_BINARY_DIR = /home/naslab/sim_tools_husky/build
 
 # Utility rule file for doxygen.
 
@@ -43,8 +46,6 @@ CMAKE_BINARY_DIR = /home/husky/sim_tools_husky/build
 include CMakeFiles/doxygen.dir/progress.make
 
 CMakeFiles/doxygen:
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/husky/sim_tools_husky/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "doxygen found"
 
 doxygen: CMakeFiles/doxygen
 doxygen: CMakeFiles/doxygen.dir/build.make
@@ -59,6 +60,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/husky/sim_tools_husky/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/husky/sim_tools_husky/src /home/husky/sim_tools_husky/src /home/husky/sim_tools_husky/build /home/husky/sim_tools_husky/build /home/husky/sim_tools_husky/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/naslab/sim_tools_husky/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/naslab/sim_tools_husky/src /home/naslab/sim_tools_husky/src /home/naslab/sim_tools_husky/build /home/naslab/sim_tools_husky/build /home/naslab/sim_tools_husky/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

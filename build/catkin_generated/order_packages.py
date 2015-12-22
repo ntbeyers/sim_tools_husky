@@ -1,5 +1,5 @@
 # generated from catkin/cmake/template/order_packages.context.py.in
-source_root_dir = "/home/husky/sim_tools_husky/src"
+source_root_dir = "/home/naslab/sim_tools_husky/src"
 whitelisted_packages = "".split(';') if "" != "" else []
 blacklisted_packages = "".split(';') if "" != "" else []
-underlay_workspaces = "/opt/ros/hydro".split(';') if "/opt/ros/hydro" != "" else []
+underlay_workspaces = "/opt/ros/indigo".split(';') if "/opt/ros/indigo" != "" else []
