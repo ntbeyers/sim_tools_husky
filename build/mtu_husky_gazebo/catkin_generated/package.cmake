@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mtu_husky_gazebo")
+set(mtu_husky_gazebo_MAINTAINER "naslab <naslab@todo.todo>")
+set(mtu_husky_gazebo_DEPRECATED "")
+set(mtu_husky_gazebo_VERSION "0.0.0")
+set(mtu_husky_gazebo_BUILD_DEPENDS "roscpp" "rospy")
+set(mtu_husky_gazebo_RUN_DEPENDS "roscpp" "rospy")
+set(mtu_husky_gazebo_BUILDTOOL_DEPENDS "catkin")

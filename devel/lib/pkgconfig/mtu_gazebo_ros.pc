@@ -1,0 +1,8 @@
+prefix=/home/naslab/sim_tools_husky/devel
+
+Name: mtu_gazebo_ros
+Description: Description of mtu_gazebo_ros
+Version: 2.4.9
+Cflags: 
+Libs: -L/home/naslab/sim_tools_husky/devel/lib 
+Requires: 

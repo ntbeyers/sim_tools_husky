@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mtu_husky_description")
+set(mtu_husky_description_MAINTAINER "Paul Bovbel <pbovbel@clearpathrobotics.com>")
+set(mtu_husky_description_DEPRECATED "")
+set(mtu_husky_description_VERSION "0.2.6")
+set(mtu_husky_description_BUILD_DEPENDS "roslaunch")
+set(mtu_husky_description_RUN_DEPENDS "robot_state_publisher" "urdf" "xacro" "ur_description")
+set(mtu_husky_description_BUILDTOOL_DEPENDS "catkin")

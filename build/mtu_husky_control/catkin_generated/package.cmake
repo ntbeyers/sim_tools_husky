@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "mtu_husky_control")
+set(mtu_husky_control_MAINTAINER "Paul Bovbel <pbovbel@clearpathrobotics.com>")
+set(mtu_husky_control_DEPRECATED "")
+set(mtu_husky_control_VERSION "0.2.7")
+set(mtu_husky_control_BUILD_DEPENDS "roslaunch")
+set(mtu_husky_control_RUN_DEPENDS "interactive_marker_twist_server" "diff_drive_controller" "joint_state_controller" "joint_trajectory_controller" "joy" "robot_localization" "rostopic" "controller_manager" "teleop_twist_joy" "twist_mux")
+set(mtu_husky_control_BUILDTOOL_DEPENDS "catkin")

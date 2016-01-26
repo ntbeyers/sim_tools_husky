@@ -7,12 +7,6 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/naslab/sim_tools_husky/devel:$CMAKE_PREFIX_PATH"
-export CPATH="/home/naslab/sim_tools_husky/devel/include:$CPATH"
-export LD_LIBRARY_PATH="/home/naslab/sim_tools_husky/devel/lib:/home/naslab/sim_tools_husky/devel/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
-export PATH="/home/naslab/sim_tools_husky/devel/bin:$PATH"
-export PKG_CONFIG_PATH="/home/naslab/sim_tools_husky/devel/lib/pkgconfig:/home/naslab/sim_tools_husky/devel/lib/x86_64-linux-gnu/pkgconfig:$PKG_CONFIG_PATH"
+export LD_LIBRARY_PATH="/home/naslab/sim_tools_husky/devel/lib/x86_64-linux-gnu:/opt/ros/indigo/lib/x86_64-linux-gnu:/home/naslab/sim_tools_husky/devel/lib:/home/naslab/catkin_ws/devel/lib:/opt/ros/indigo/lib"
+export PKG_CONFIG_PATH="/home/naslab/sim_tools_husky/devel/lib/x86_64-linux-gnu/pkgconfig:/opt/ros/indigo/lib/x86_64-linux-gnu/pkgconfig:/home/naslab/sim_tools_husky/devel/lib/pkgconfig:/home/naslab/catkin_ws/devel/lib/pkgconfig:/opt/ros/indigo/lib/pkgconfig"
 export PWD="/home/naslab/sim_tools_husky/build"
-export PYTHONPATH="/home/naslab/sim_tools_husky/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/naslab/sim_tools_husky/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/naslab/sim_tools_husky/src:$ROS_PACKAGE_PATH"

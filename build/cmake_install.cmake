@@ -118,7 +118,12 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/naslab/sim_tools_husky/build/gtest/cmake_install.cmake")
   INCLUDE("/home/naslab/sim_tools_husky/build/mtu01_husky/cmake_install.cmake")
+  INCLUDE("/home/naslab/sim_tools_husky/build/mtu_ur_description/cmake_install.cmake")
   INCLUDE("/home/naslab/sim_tools_husky/build/my_husky_sim/cmake_install.cmake")
+  INCLUDE("/home/naslab/sim_tools_husky/build/mtu_husky_gazebo/cmake_install.cmake")
+  INCLUDE("/home/naslab/sim_tools_husky/build/mtu_husky_control/cmake_install.cmake")
+  INCLUDE("/home/naslab/sim_tools_husky/build/mtu_husky_description/cmake_install.cmake")
+  INCLUDE("/home/naslab/sim_tools_husky/build/mtu_gazebo_ros/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

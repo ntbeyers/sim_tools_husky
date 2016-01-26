@@ -283,7 +283,7 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/indigo/lib/librosconsole_bridge.so
+lib:FILEPATH=/opt/ros/indigo/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
@@ -293,6 +293,36 @@ mtu01_husky_BINARY_DIR:STATIC=/home/naslab/sim_tools_husky/build/mtu01_husky
 
 //Value Computed by CMake
 mtu01_husky_SOURCE_DIR:STATIC=/home/naslab/sim_tools_husky/src/mtu01_husky
+
+//Value Computed by CMake
+mtu_gazebo_ros_BINARY_DIR:STATIC=/home/naslab/sim_tools_husky/build/mtu_gazebo_ros
+
+//Value Computed by CMake
+mtu_gazebo_ros_SOURCE_DIR:STATIC=/home/naslab/sim_tools_husky/src/mtu_gazebo_ros
+
+//Value Computed by CMake
+mtu_husky_control_BINARY_DIR:STATIC=/home/naslab/sim_tools_husky/build/mtu_husky_control
+
+//Value Computed by CMake
+mtu_husky_control_SOURCE_DIR:STATIC=/home/naslab/sim_tools_husky/src/mtu_husky_control
+
+//Value Computed by CMake
+mtu_husky_description_BINARY_DIR:STATIC=/home/naslab/sim_tools_husky/build/mtu_husky_description
+
+//Value Computed by CMake
+mtu_husky_description_SOURCE_DIR:STATIC=/home/naslab/sim_tools_husky/src/mtu_husky_description
+
+//Value Computed by CMake
+mtu_husky_gazebo_BINARY_DIR:STATIC=/home/naslab/sim_tools_husky/build/mtu_husky_gazebo
+
+//Value Computed by CMake
+mtu_husky_gazebo_SOURCE_DIR:STATIC=/home/naslab/sim_tools_husky/src/mtu_husky_gazebo
+
+//Value Computed by CMake
+mtu_ur_description_BINARY_DIR:STATIC=/home/naslab/sim_tools_husky/build/mtu_ur_description
+
+//Value Computed by CMake
+mtu_ur_description_SOURCE_DIR:STATIC=/home/naslab/sim_tools_husky/src/mtu_ur_description
 
 //Value Computed by CMake
 my_husky_sim_BINARY_DIR:STATIC=/home/naslab/sim_tools_husky/build/my_husky_sim
@@ -435,7 +465,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=4
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

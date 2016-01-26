@@ -276,7 +276,7 @@ roscpp_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f my_husky_sim/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make my_husky_sim/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	$(MAKE) -f mtu_ur_description/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mtu_ur_description/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 #=============================================================================
@@ -289,7 +289,7 @@ roscpp_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f my_husky_sim/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make my_husky_sim/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	$(MAKE) -f mtu_ur_description/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mtu_ur_description/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 #=============================================================================
@@ -302,7 +302,7 @@ roscpp_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	$(MAKE) -f my_husky_sim/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_husky_sim/CMakeFiles/roscpp_generate_messages_py.dir/build
+	$(MAKE) -f mtu_ur_description/CMakeFiles/roscpp_generate_messages_py.dir/build.make mtu_ur_description/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 #=============================================================================
@@ -315,7 +315,7 @@ rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f my_husky_sim/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make my_husky_sim/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f mtu_ur_description/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mtu_ur_description/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -328,7 +328,7 @@ rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f my_husky_sim/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make my_husky_sim/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f mtu_ur_description/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mtu_ur_description/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -341,7 +341,7 @@ rosgraph_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f my_husky_sim/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make my_husky_sim/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	$(MAKE) -f mtu_ur_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mtu_ur_description/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
@@ -354,7 +354,7 @@ std_msgs_generate_messages_cpp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f my_husky_sim/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make my_husky_sim/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	$(MAKE) -f mtu_ur_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mtu_ur_description/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 #=============================================================================
@@ -367,7 +367,7 @@ std_msgs_generate_messages_lisp: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f my_husky_sim/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make my_husky_sim/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	$(MAKE) -f mtu_ur_description/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mtu_ur_description/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 #=============================================================================
@@ -380,7 +380,7 @@ std_msgs_generate_messages_py: cmake_check_build_system
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	$(MAKE) -f my_husky_sim/CMakeFiles/std_msgs_generate_messages_py.dir/build.make my_husky_sim/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	$(MAKE) -f mtu_ur_description/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mtu_ur_description/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Help Target
