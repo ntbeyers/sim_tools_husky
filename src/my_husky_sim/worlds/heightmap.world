@@ -72,8 +72,8 @@
         <collision name="collision">
           <geometry>
             <heightmap>
-              <uri>/home/naslab/sim_tools_husky/src/my_husky_sim/media/materials/textures/terrain5.png</uri>
-              <size>17 17 3</size>
+              <uri>/home/naslab/sim_tools_husky/src/my_husky_sim/media/materials/textures/terrain.png</uri>
+              <size>17 17 .2</size>
               <pos>0 0 0</pos>
             </heightmap>
           </geometry>
@@ -106,8 +106,8 @@
                 <min_height>4</min_height>
                 <fade_dist>5</fade_dist>
               </blend>
-              <uri>/home/naslab/sim_tools_husky/src/my_husky_sim/media/materials/textures/terrain5.png</uri>
-              <size>17 17 3</size>
+              <uri>/home/naslab/sim_tools_husky/src/my_husky_sim/media/materials/textures/terrain.png</uri>
+              <size>17 17 .2</size>
               <pos>0 0 0</pos>
             </heightmap>
           </geometry>
