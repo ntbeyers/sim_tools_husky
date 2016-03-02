@@ -53,7 +53,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
       <arg name="laser_enabled" value="$(arg laser_enabled)"/>
       <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
       <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
-      <arg name="x" value="0.0"/>
+      <arg name="x" value="-7.0"/>
       <arg name="y" value="0.0"/>
       <arg name="namespace" value="husky1"/>
     </include>
@@ -65,20 +65,20 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
       <arg name="laser_enabled" value="$(arg laser_enabled)"/>
       <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
       <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
-      <arg name="x" value="0.0"/>
-      <arg name="y" value="-2.0"/>
+      <arg name="x" value="-7.0"/>
+      <arg name="y" value="2.0"/>
       <arg name="namespace" value="husky2"/>
     </include>
   </group>
-<!-- 
+
   <group ns="husky3">
     <param name="tf_prefix" value="husky3" /> 
     <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
       <arg name="laser_enabled" value="$(arg laser_enabled)"/>
       <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
       <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
-      <arg name="x" value="3.0"/>
-      <arg name="y" value="1.0"/>
+      <arg name="x" value="-7.0"/>
+      <arg name="y" value="4.0"/>
       <arg name="namespace" value="husky3"/>
     </include>
   </group>
@@ -89,13 +89,13 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
       <arg name="laser_enabled" value="$(arg laser_enabled)"/>
       <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
       <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
-      <arg name="x" value="-5.0"/>
-      <arg name="y" value="-1.0"/>
+      <arg name="x" value="-7.0"/>
+      <arg name="y" value="6.0"/>
       <arg name="namespace" value="husky4"/>
     </include>
   </group>
 
-  <group ns="husky5">
+ <!--  <group ns="husky5">
     <param name="tf_prefix" value="husky5" /> 
     <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
       <arg name="laser_enabled" value="$(arg laser_enabled)"/>

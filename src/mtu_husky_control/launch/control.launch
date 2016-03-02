@@ -8,7 +8,6 @@
 
   <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
     <rosparam command="load" file="$(find mtu_husky_control)/config/localization.yaml" />
-    <!-- <param name="tf_prefix" value="" /> -->
   </node>
 
   <node pkg="interactive_marker_twist_server" type="marker_server" name="twist_marker_server" output="screen"/>
@@ -17,5 +16,19 @@
     <rosparam command="load" file="$(find mtu_husky_control)/config/twist_mux.yaml" />
     <remap from="cmd_vel_out" to="husky_velocity_controller/cmd_vel"/>
   </node>
+
+
+  <node pkg="robot_localization" type="navsat_transform_node" name="navsat_transform_node" respawn="true">
+
+    <param name="magnetic_declination_radians" value="1.570796"/>
+
+    <param name="yaw_offset" value="0"/>
+
+    <remap from="imu/data" to="imu/data" />
+    <remap from="gps/fix" to="navsat/fix" />
+    <remap from="odometry/filtered" to="odometry/filtered" />
+
+  </node>
+
 
 </launch>

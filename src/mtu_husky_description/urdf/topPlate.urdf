@@ -15,6 +15,12 @@
 				<color rgba="0.1 0.1 0.1 1"/>
 			</material>
 		</visual>
+		  <collision>
+          <origin xyz="-.2 0 .1" rpy="0 0 0" />
+          <geometry>
+            <box size=".5 .5 .5" />
+          </geometry>
+        </collision>
 	</link>
 	<gazebo reference="topPlate">
         <material>Gazebo/FlatBlack</material>
