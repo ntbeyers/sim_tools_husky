@@ -73,7 +73,7 @@
           <geometry>
             <heightmap>
               <uri>/home/naslab/sim_tools_husky/src/my_husky_sim/media/materials/textures/terrain.png</uri>
-              <size>17 17 .2</size>
+              <size>17 17 .6</size>
               <pos>0 0 0</pos>
             </heightmap>
           </geometry>
