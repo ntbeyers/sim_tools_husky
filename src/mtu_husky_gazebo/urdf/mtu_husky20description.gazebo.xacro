@@ -28,13 +28,13 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
   <xacro:arg name="ur5_enabled" default="false" />
   <xacro:arg name="kinect_enabled" default="false" />
 
-  <xacro:include filename="$(find mtu_husky_description)/urdf/mtu_husky_bus.urdf.xacro" />
-  <xacro:include filename="$(find mtu_husky_gazebo)/urdf/mtu_husky8.gazebo.xacro" />
+  <xacro:include filename="$(find mtu_husky_description)/urdf/mtu_husky_cabling.urdf.xacro" />
+  <xacro:include filename="$(find mtu_husky_gazebo)/urdf/mtu_husky1.gazebo.xacro" />
 
   <!-- Gazebo plugin for ROS Control -->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-      <robotNamespace>/husky8</robotNamespace>
+      <robotNamespace>/husky20</robotNamespace>
     </plugin>
   </gazebo>
 

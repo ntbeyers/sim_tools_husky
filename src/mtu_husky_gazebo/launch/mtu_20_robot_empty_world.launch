@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<!--
+Software License Agreement (BSD)
+
+\file      husky_empty_world.launch
+\authors   Paul Bovbel <pbovbel@clearpathrobotics.com, Devon Ash <dash@clearpathrobotics.com>
+\copyright Copyright (c) 2015, Clearpath Robotics, Inc., All rights reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that
+the following conditions are met:
+ * Redistributions of source code must retain the above copyright notice, this list of conditions and the
+   following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the
+   following disclaimer in the documentation and/or other materials provided with the distribution.
+ * Neither the name of Clearpath Robotics nor the names of its contributors may be used to endorse or promote
+   products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WAR-
+RANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, IN-
+DIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<launch>
+
+  <arg name="world_name" default="worlds/empty.world"/>
+
+  <arg name="laser_enabled" default="true"/>
+  <arg name="ur5_enabled" default="false"/>
+  <arg name="kinect_enabled" default="false"/>
+
+  <include file="$(find mtu_gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(arg world_name)"/> <!-- world_name is wrt GAZEBO_RESOURCE_PATH environment variable -->
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find mtu_husky_gazebo)/urdf/mtu_description.gazebo.xacro'
+    laser_enabled:=$(arg laser_enabled)
+    ur5_enabled:=$(arg ur5_enabled)
+    kinect_enabled:=$(arg kinect_enabled)
+    " />
+<!--Spawn Huskies in their respective Namespaces-->
+
+  <group ns="husky1">
+    <param name="tf_prefix" value="husky1" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="0.0"/>
+      <arg name="y" value="0.0"/>
+      <arg name="namespace" value="husky1"/>
+    </include>
+  </group>
+
+  <group ns="husky2">
+    <param name="tf_prefix" value="husky2" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="0.0"/>
+      <arg name="y" value="-2.0"/>
+      <arg name="namespace" value="husky2"/>
+    </include>
+  </group>
+
+  <group ns="husky3">
+    <param name="tf_prefix" value="husky3" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="0.0"/>
+      <arg name="y" value="-4.0"/>
+      <arg name="namespace" value="husky3"/>
+    </include>
+  </group>
+
+  <group ns="husky4">
+    <param name="tf_prefix" value="husky4" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="0.0"/>
+      <arg name="y" value="-6.0"/>
+      <arg name="namespace" value="husky4"/>
+    </include>
+  </group>
+
+  <group ns="husky5">
+    <param name="tf_prefix" value="husky5" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="0.0"/>
+      <arg name="y" value="-8.0"/>
+      <arg name="namespace" value="husky5"/>
+    </include>
+  </group>
+
+  <group ns="husky6">
+    <param name="tf_prefix" value="husky6" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-2.0"/>
+      <arg name="y" value="0.0"/>
+      <arg name="namespace" value="husky6"/>
+    </include>
+  </group>
+
+  <group ns="husky7">
+    <param name="tf_prefix" value="husky7" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-2.0"/>
+      <arg name="y" value="-2.0"/>
+      <arg name="namespace" value="husky7"/>
+    </include>
+  </group>
+
+  <group ns="husky8">
+    <param name="tf_prefix" value="husky8" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-2.0"/>
+      <arg name="y" value="-4.0"/>
+      <arg name="namespace" value="husky8"/>
+    </include>
+  </group>
+
+  <group ns="husky9">
+    <param name="tf_prefix" value="husky9" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-2.0"/>
+      <arg name="y" value="-6.0"/>
+      <arg name="namespace" value="husky9"/>
+    </include>
+  </group>
+
+  <group ns="husky10">
+    <param name="tf_prefix" value="husky10" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-2.0"/>
+      <arg name="y" value="-8.0"/>
+      <arg name="namespace" value="husky10"/>
+    </include>
+  </group>
+
+  <group ns="husky11">
+    <param name="tf_prefix" value="husky11" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-4.0"/>
+      <arg name="y" value="0.0"/>
+      <arg name="namespace" value="husky11"/>
+    </include>
+  </group>
+
+  <group ns="husky12">
+    <param name="tf_prefix" value="husky12" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-4.0"/>
+      <arg name="y" value="-2.0"/>
+      <arg name="namespace" value="husky12"/>
+    </include>
+  </group>
+
+  <group ns="husky13">
+    <param name="tf_prefix" value="husky13" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-4.0"/>
+      <arg name="y" value="-4.0"/>
+      <arg name="namespace" value="husky13"/>
+    </include>
+  </group>
+
+  <group ns="husky14">
+    <param name="tf_prefix" value="husky14" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-4.0"/>
+      <arg name="y" value="-6.0"/>
+      <arg name="namespace" value="husky14"/>
+    </include>
+  </group>
+
+  <group ns="husky15">
+    <param name="tf_prefix" value="husky15" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-4.0"/>
+      <arg name="y" value="-8.0"/>
+      <arg name="namespace" value="husky15"/>
+    </include>
+  </group>
+
+  <group ns="husky16">
+    <param name="tf_prefix" value="husky16" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-6.0"/>
+      <arg name="y" value="0.0"/>
+      <arg name="namespace" value="husky16"/>
+    </include>
+  </group>
+
+  <group ns="husky17">
+    <param name="tf_prefix" value="husky17" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-6.0"/>
+      <arg name="y" value="-2.0"/>
+      <arg name="namespace" value="husky17"/>
+    </include>
+  </group>
+
+  <group ns="husky18">
+    <param name="tf_prefix" value="husky18" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-6.0"/>
+      <arg name="y" value="-4.0"/>
+      <arg name="namespace" value="husky18"/>
+    </include>
+  </group>
+
+  <group ns="husky19">
+    <param name="tf_prefix" value="husky19" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-6.0"/>
+      <arg name="y" value="-6.0"/>
+      <arg name="namespace" value="husky19"/>
+    </include>
+  </group>
+
+  <group ns="husky20">
+    <param name="tf_prefix" value="husky20" /> 
+    <include file="$(find mtu_husky_gazebo)/launch/mtu_multi_spawn_husky.launch">
+      <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+      <arg name="ur5_enabled" value="$(arg ur5_enabled)"/>
+      <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+      <arg name="x" value="-6.0"/>
+      <arg name="y" value="-8.0"/>
+      <arg name="namespace" value="husky20"/>
+    </include>
+  </group>
+
+</launch>

@@ -26,7 +26,7 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 <robot name="husky_robot" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <!-- Included URDF/XACRO Files -->
-  <xacro:include filename="$(find mtu_husky_description)/urdf/decorations_bus.urdf.xacro" />
+  <xacro:include filename="$(find mtu_husky_description)/urdf/decorations_source.urdf.xacro" />
   <xacro:include filename="$(find mtu_husky_description)/urdf/wheel.urdf.xacro" />
 
   <xacro:include filename="$(find mtu_husky_description)/urdf/accessories/kinect_camera.urdf.xacro"/>
