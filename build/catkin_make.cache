@@ -1,2 +1,2 @@
 mtu01_husky:mtu_gazebo_ros:mtu_husky_control:mtu_husky_description:mtu_husky_gazebo:mtu_ur_description:my_husky_sim
--DCATKIN_DEVEL_PREFIX=/home/naslab/sim_tools_husky/devel -DCMAKE_INSTALL_PREFIX=/home/naslab/sim_tools_husky/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/ntbeyers/sim_tools_husky/devel -DCMAKE_INSTALL_PREFIX=/home/ntbeyers/sim_tools_husky/install -G Unix Makefiles

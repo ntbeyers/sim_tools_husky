@@ -1,8 +1,8 @@
-prefix=/home/naslab/sim_tools_husky/devel
+prefix=/home/ntbeyers/sim_tools_husky/devel
 
 Name: mtu_husky_description
 Description: Description of mtu_husky_description
 Version: 0.2.6
 Cflags: 
-Libs: -L/home/naslab/sim_tools_husky/devel/lib 
+Libs: -L/home/ntbeyers/sim_tools_husky/devel/lib 
 Requires: 
